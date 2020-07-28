@@ -9,7 +9,7 @@ export default function Menu() {
       <a href="/">
       <img src={logo} className="Logo" alt="AlexFlix" />
       </a>
-      <Button as="a" href="/" className="ButtonLink"> Novo Vídeo</Button>
+      <Button to="/cadastro/video" className="ButtonLink"> Novo Vídeo</Button>
     </nav>
   )
 }

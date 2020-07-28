@@ -6,12 +6,12 @@ function Footer() {
   return (
     <FooterBase>
       <a href="https://www.alura.com.br/">
-        <img src={logo} alt="Alexflix" />
+        <img src={logo} alt="Alexflix" style={{height:'50px'}} />
       </a>
       <p>
         Orgulhosamente criado durante a
         {' '}
-        <a href="https://www.alura.com.br/" style={{height:"50px"}}>
+        <a href="https://www.alura.com.br/" >
           Imersão React da Alura
         </a>
       </p>
