@@ -7,7 +7,8 @@ export const VideoCardContainer = styled.a`
   overflow: hidden;
   cursor: pointer;
   color: white;
-  flex: 0 0 298px;
+  /* flex: 0 0 298px; */
+  flex: 1 1 0px;
   width: 298px;
   height: 197px;
   background-image: ${({ url }) => `url(${url})`};
@@ -18,13 +19,18 @@ export const VideoCardContainer = styled.a`
   display: flex;
   align-items: flex-end;
   padding: 16px;
-
+  
   transition: opacity .3s;
   &:hover,
   &:focus {
-    opacity: .5;
-  }
-  
+    transition: transform 500ms;
+    transform: scale(1.5);
+    z-index: 1;
+    -webkit-box-shadow: -4px 2px 101px 7px #dc1b28;
+  -moz-box-shadow: -4px 2px 101px 7px #dc1b28;
+  box-shadow: -4px 2px 101px 7px #dc1b28;
+  } 
+
   &:not(:first-child) {
     margin-left: 20px;
   }
